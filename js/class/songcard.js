@@ -8,10 +8,12 @@ export default class SongCard {
         this.traks = _item.total_tracks;
         this.external= _item.external_urls.spotify;
         this.id = "album"+id;
+        this.albumId = _item.id
     }
 
     render(){
         let newDiv = document.createElement("div");
+        newDiv.className="d-flex justify-content-center"
         document.querySelector(this.parent).append(newDiv)
 
         newDiv.innerHTML= 
@@ -43,7 +45,7 @@ export default class SongCard {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <img class="col-12" src=${this.image} alt="${this.albumsTitle}">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/${this.albumId}?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
               <div class="modal-footer">
 

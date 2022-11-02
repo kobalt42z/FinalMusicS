@@ -38,11 +38,46 @@
 <body>
 
 
-  
+  <div class="container-fluid sticky-top bg-white">
+    <div class="row row-cols-3  align-items-center justify-content-end">
+
+      <!-- <div class="col-lg-4  col-1"></div> -->
+      <div class="col-lg-4 col-6 col-md-5">
+        <div class="input-group ">
+          <input type="text" placeholder="Type an artis name" class="form-control "
+            aria-label="Text input with segmented dropdown button" id="searchInput2">
+          <button type="button" class="btn btn-info" id="searchBtn2">Search</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 col-md-4 d-flex">
+        <Image class='logo col-12 col-lg-8 col-xl-6' src="img/logo.png" alt='logo' />
+      </div>
+      
+
+      
+
+      
+
+
+    
+    </div>
+  </div>
   <div class="container main ">
 
+    <div class=" row  fixed-bottom justify-content-end m-3 ">
+      <div class="col-6 col-xl-4">
+        <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/album/3nzuGtN3nXARvvecier4K0?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
 
-  
+   
+
+
+
+
 
     <div class="modal fade " id="mainModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -52,40 +87,43 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body ">
-          הכניסו את  שם הזמר בשפה הרצויה ולחצו על חיפוש או הקישו ENTER
+            הכניסו את שם הזמר בשפה הרצויה ולחצו על חיפוש או הקישו ENTER
 
-          <br>
-          <br>
+            <br>
+            <br>
 
-          המנוע יציג לכם את כל האלבומים של האומן המבוקש ובלחיצה על התמונה תוכלו לראות אותה בגדול יותר 
+            המנוע יציג לכם את כל האלבומים של האומן המבוקש ובלחיצה על התמונה תוכלו לראות אותה בגדול יותר
+<br><br>
+            <p>this site is for practice purpose only i dont have any gain from that !  </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">הבנתי המשך</button>
-           
+
           </div>
         </div>
       </div>
     </div>
-  
-    <div class="logo row justify-content-center m-5 ">
-      <Image class='logo col-lg-8 col-xl-6' src="img/logo.png" alt='' />
+
+    <div class="logo row justify-content-center m-5 " id="logoBlock">
+      <Image class='logo col-lg-8 col-xl-6' src="img/logo.png" alt='logo' />
     </div>
 
-    <div class="container search-block col-8">
-     
+    <div class="container search-block col-8" id="searchBlock">
+
       <div class="input-group ">
-        
-        <input type="text" placeholder="Type an artis name" class="form-control " aria-label="Text input with segmented dropdown button"
-          id="searchInput">
+
+        <input type="text" placeholder="Type an artis name" class="form-control "
+          aria-label="Text input with segmented dropdown button" id="searchInput">
         <button type="button" class="btn btn-info" id="searchBtn">Search</button>
       </div>
     </div>
 
     <div class="container mt-5 bg-secondary bg-opacity-25 rounded-1 ">
-     
 
-       <div class="row row-cols-3 row-cols-xl-4" id="reciver">
-        <!--<div class="card songCard pt-2 shadow-lg rounded bg-secondary " style="width: 18rem;">
+
+      <div class="row row-col-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 j" id="reciver">
+
+        <!--<div class="card songCard pt-2 shadow-lg rounded bg-secondary " style="width: 18rem;"> 
           <a href="#" type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
               src="img/download.png" class="card-img-top" alt="..."></a>
           <div class="card-body">
@@ -112,8 +150,9 @@
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close "></button>
               </div>
-              <div class="modal-body">
-                <img class="col-12" src="img/download.png" alt="">
+              <div class="modal-body "  >
+            
+               <img class="col-12  " src="img/download.png" alt="">
               </div>
               <div class="modal-footer">
 
@@ -130,28 +169,31 @@
 
 
 
+      </div>
+
+
+
     </div>
 
 
-  </div>
 
 
 
 
+    <!-- Add your site or application content here -->
 
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script type="module" src="js/main.js"></script>
 
-  <!-- Add your site or application content here -->
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script type="module" src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    
 </body>
 
 </html>
